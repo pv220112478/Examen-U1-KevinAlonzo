@@ -1,26 +1,27 @@
-let cafe: number = 0x1EB; //cambiados a binario 000111101011
-let azucar: number = 0xDE;//- 11011110
-let leche: number = 0x7B;//- 01111011
-let hielo: number = 0x142;//- 000101000010
-let chocolate: number = 0x63;//- 01100011
-console.log(cafe)
-console.log(azucar)
-console.log(leche)
-console.log(hielo)
-console.log(chocolate)
+let cafe: number = 0x1EB; 
+let azucar: number = 0xDE;
+let leche: number = 0x7B;
+let hielo: number = 0x142;
+let chocolate: number = 0x63;
 
-let cafeteria: boolean = true;
+let cafeteria: boolean = false; 
 
-if (cafeteria=true){
-    console.log("abierto")
-    let registroLote : [Date,number,String] = [new Date(),0b000111101011,"nescafe"]
-    let historialPrecios: [Date,string,Date,String] = [new Date("25-12-2025"),"precio anterior=400",new Date(),"precio actual=500"]
-    let coordenadasEntrega: [number,number,number] = [20.6136,-105.227,111]
-    console.log(registroLote)
-    console.log(historialPrecios)
-    console.log(coordenadasEntrega)
+if (cafeteria) {
+    console.log("abierto");
+    
+    
+    console.log("Inventario:");
+    console.log(cafe, azucar, leche, hielo, chocolate);
 
+    let registroLote : [Date, number, string] = [new Date(), 0b000111101011, "nescafe"];
+    let historialPrecios: [Date, string, Date, string] = [new Date("2025-12-25"), "precio anterior=400", new Date(), "precio actual=500"];
+    let coordenadasEntrega: [number, number, number] = [20.6136, -105.227, 111];
 
-}else{
-    console.log("cerrado")
+    console.log("registro del lote del proovedor de cafe", registroLote);
+    console.log("registro de precios", historialPrecios);
+    console.log("coordenadas", coordenadasEntrega);
+
+} else {
+    
+    console.log("cerrado");
 }
